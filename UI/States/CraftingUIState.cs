@@ -629,19 +629,19 @@ namespace MagicStorage.UI.States {
 				foreach (int tile in CraftingGUI.selectedRecipe.requiredTile)
 					AddText(Lang.GetMapObjectName(MapHelper.TileToLookup(tile, 0)));
 
-				if (CraftingGUI.selectedRecipe.HasCondition(Recipe.Condition.NearWater))
+				if (CraftingGUI.selectedRecipe.HasCondition(Condition.NearWater))
 					AddText(Language.GetTextValue("LegacyInterface.53"));
 
-				if (CraftingGUI.selectedRecipe.HasCondition(Recipe.Condition.NearHoney))
+				if (CraftingGUI.selectedRecipe.HasCondition(Condition.NearHoney))
 					AddText(Language.GetTextValue("LegacyInterface.58"));
 
-				if (CraftingGUI.selectedRecipe.HasCondition(Recipe.Condition.NearLava))
+				if (CraftingGUI.selectedRecipe.HasCondition(Condition.NearLava))
 					AddText(Language.GetTextValue("LegacyInterface.56"));
 
-				if (CraftingGUI.selectedRecipe.HasCondition(Recipe.Condition.InSnow))
+				if (CraftingGUI.selectedRecipe.HasCondition(Condition.InSnow))
 					AddText(Language.GetTextValue("LegacyInterface.123"));
 
-				if (CraftingGUI.selectedRecipe.HasCondition(Recipe.Condition.InGraveyardBiome))
+				if (CraftingGUI.selectedRecipe.HasCondition(Condition.InGraveyard))
 					AddText(Language.GetTextValue("LegacyInterface.124"));
 
 				if (isEmpty)
